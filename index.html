@@ -11,21 +11,21 @@
     <h1>
         g00d AM Zachary Lian!
     </h1>
-    <div id='intro'>
-        <p>
-            <img src='img/selfie.jpeg'>
-            <br>
-            im zachary and i love to code!
-
-            <ol>
-                these are my favourite food:
-                <li>xiao long bao!</li>
-                <li>wanton mee!</li>
-                <li>ramen!</li>
-            </ol>
-
-        </p>
+    <div id='selfie' class='potrait'>
+        <img src='img/selfie.jpeg'>
     </div>
+    <p>
+        <br>
+        im zachary and i love to code!
+
+        <ol>
+            these are my favourite food:
+            <li>xiao long bao!</li>
+            <li>wanton mee!</li>
+            <li>ramen!</li>
+        </ol>
+
+    </p>
     
 </body>
 </html>
@@ -33,19 +33,19 @@
 
 
 <style>
-    img {
+    #selfie {
         width: 200px;  
         height: 300px;  
-        display: flex;  
     }
-    div {
+    p {
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         font-size: 25px;
     }
     body {
-        background-color: darkslateblue;
         background-image: url(img/bground.JPG);
-        background-size: auto;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center; 
     }
 
 </style>
