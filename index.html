@@ -12,20 +12,24 @@
         g00d AM Zachary Lian!
     </h1>
 
-    <div align=''>
+    <div class='selfie'>
         <img src='img/selfie.jpeg'>  
+        <div class='overlay'>
+            sheeeeeeeeeesh
+        </div>
     </div>
 
     <p class='invert'>
         <br>
-        im zachary and i love to code!
+        im zachary, y2 is student, and i love to code!
 
         <ol class='invert'>
             these are my favourite food:
-            <li>xiao long bao!</li>
             <li>wanton mee!</li>
             <li>ramen!</li>
+            <li>xiao long babies!</li>
         </ol>
+        <br>
 
     </p>
     
@@ -39,16 +43,36 @@
         display: table;
         margin: 0px auto 0px auto;
     }
-    img {
+    .selfie {
         display: block;
-        height: 40%;
-        width: 40%;
+        height: 10%;
+        width: 10%;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
     }
+
+    .overlay {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5); /* Black see-through */
+        color: #f1f1f1; 
+        width: 100%;
+        transition: .5s ease;
+        opacity:0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .selfie :hover .overlay {
+        opacity: 1;
+    }
+
     .invert {
-        background-color: bisque;
-        color: black;
+        color: #bc4749;
     }
     p {        
         display: table;
