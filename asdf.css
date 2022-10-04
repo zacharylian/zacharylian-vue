@@ -5,8 +5,17 @@
     font-family: 'DM Serif Display';
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
+    padding: 50px 0; 
+    text-transform: uppercase;
 }
 body {
     background-color: #FFEDDB;
     color: black;
+    /* background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;  */
+    /* height: 100%;
+    margin: 0px; */
+    font-weight: bold;
 }
