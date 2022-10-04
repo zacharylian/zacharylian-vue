@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=DM+Serif+Display">
+        href="https://fonts.googleapis.com/css?family=Azeret+Mono">
     <link rel="stylesheet" href="asdf.css">
-    <script src="asdf.js"></script>
     <title>chachabois</title>
 </head>
 <body>
@@ -17,22 +16,26 @@
         <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img src="/img/shin-black-noodle.png" alt="" width="30" height="24">
-                        <span id="homeBtn">Zachary</span>
+                        <img src="./img/shin-black-noodle.png" alt="" width="30" height="30">
+                        <span id="homeBtn">Zachary Lian</span>
                     </a>
                     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button> -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="mx-auto"></div>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">About Me</a>
+                                <a class="nav-link" aria-current="page" href="#aboutHeader">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#favHeader">Favourites</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Projects</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Contact Me</a>
+                                <a class="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -41,72 +44,169 @@
     </div>
 
 
+    <div class="circular">
+        <h1 id="circle-place">
+            welcome-to-my-profile-
+        </h1>
+    </div>
 
-    <h1>
-        g00d AM Zachary Lian!
-    </h1>
-
-
-    <p class='invert'>
-        <br>
-        im zachary, y2 is student, and i love to code!
-
-        <ol class='invert'>
-            these are my favourite food:
-            <li>wanton mee!</li>
-            <li>ramen!</li>
-            <li>xiao long babies!</li>
-        </ol>
-        <br>
-
-    </p>
+    <hr>
     
+    <div id="aboutHeader">
+        <h1>About</h1>
+        <a href="#navbarSupportedContent">
+            <img src="./img/shin-black-noodle.png" alt="" width="30" height="30">
+        </a>
+    </div>
+
+    <div class="about">
+        <!-- <div id="selfie">
+            <img src="./img/selfie.jpeg">
+            <p>asdfasdfasdf</p>
+        </div> -->
+        
+        <div id="selfie">
+            <img src="./img/selfie.jpeg" class="selfie_img">
+            <div class="selfie_overlay">
+                <div class="selfie_title">
+                    stinky
+                </div>
+            </div>
+        </div>
+
+        <div id="selfie_text">  
+            <p id="st1">Information Systems Undergraduate Majoring in Business Analytics and Digitalisation & Cloud Solutions</h4>
+            <p>Adaptable team player who is able to work under pressure in a fast-paced environment. Strong communicator and self-learner who is fluent in English. Passionate about data science and analytics, and frontend engineering. </p>
+            <p><strong>Languages & Frameworks: </strong><br>Python (Sci-kit Learn, Matplotlib, Seaborn, Flask), SQL, NoSQL, HTML5, CSS, Javascript (Axios, Bootstrap), Vue, PHP, Docker, APIs.</p>
+            <p><strong>Tools: </strong><br>Tableau, Anaconda, Jupyter, Figma, Microsoft applications, Adobe Creative Suite, Canva.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="favHeader">
+        <h1>Favourites</h1>
+        <a href="#navbarSupportedContent">
+            <img src="./img/shin-black-noodle.png" alt="" width="30" height="30">
+        </a>
+    </div>
+
+    <div class="row">
+        <div class="column col-6">
+            <div id="volumeCover" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner w-50" id="carouV">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./img/csmcover.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/jjkcover.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/opmcover.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/aotcover.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/bluelockcover.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/mobcover.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <p id="vcP">M a n g a</p>
+        </div>
+        <div class="column col-6">
+            <div id="albumCover" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner w-50" id="carouA">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="./img/frank.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/carti.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/ken.png" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/daniel-caesar.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/fred.jpeg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img src="./img/week.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+            <p id="acP">A r t i s t s</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id="projHeader">
+        <h1>Projects</h1>
+        <a href="#navbarSupportedContent">
+            <img src="./img/shin-black-noodle.png" alt="" width="30" height="30">
+        </a>
+    </div>
+
+    <div>
+
+    </div>
+
+    <hr>
+
+    <div id="contactHeader">
+        <h1>Contact</h1>
+        <a href="#navbarSupportedContent">
+            <img src="./img/shin-black-noodle.png" alt="" width="30" height="30">
+        </a>
+    </div>
+
+    <div class="contact">
+        <div class="row">
+            <div class="columncontact">
+                <a id="contact1" href="mailto:workzacharywork@gmail.com">
+                    <img src="./img/email.svg" width="60" height="60">
+                </a>
+                <a id="contact2" href="https://www.linkedin.com/in/zacharylian/">
+                    <img src="./img/linkedin.png" width="30" height="30">
+                </a>
+                <a id="contact3" href="https://github.com/zacharylian">
+                    <img src="./img/github.png" width="30" height="30">
+                </a>
+                <a id="contact4" href="https://www.instagram.com/zacherreese/">
+                    <img src="./img/insta.png" width="30" height="30">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    
+
+
 </body>
+    <footer>
+        © 2022. Designed by Zachary Lian. 
+    </footer>
 </html>
 
+<script>
 
-
-<style>
-    h1 {
-        display: table;
-        margin: 0px auto 0px auto;
-        color: #bc4749;
-    }
-    
-    .overlay {
-        position: absolute; 
-        bottom: 0; 
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.5); /* Black see-through */
-        color: #f1f1f1; 
-        width: 100%;
-        transition: .5s ease;
-        opacity:0;
-        color: white;
-        font-size: 20px;
-        padding: 20px;
-        text-align: center;
+    const text = document.getElementById("circle-place");
+    text.innerHTML = text.textContent.replace(/\S/g, "<span>$&</span>");
+    const ele = document.querySelectorAll("span")
+    for (var i = 1; i < ele.length; i++) {
+        ele[i].style.transform="rotate("+i*16.5+"deg)";
     }
 
-    .selfie > img :hover .overlay {
-        opacity: 1;
-    }
+</script>
 
-    .invert {
-        color: beige;
-    }
-    p {        
-        display: table;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 30px;
-        margin: 0px auto 0px auto;
-    }
-    ol {
-        display: table;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        font-size: 30px;
-        margin: 0px auto 0px auto;
-    }
-    
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="asdf.js"></script>
 
-</style>
+

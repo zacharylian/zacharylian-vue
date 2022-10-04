@@ -1,21 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Azeret Mono';
+}
+
 .navbar-inner {
     background: transparent;
 }
 .navbar {
-    font-family: 'DM Serif Display';
+    font-family: 'Azeret Mono';
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
-    padding: 50px 0; 
+    /* padding: 50px 0;  */
     text-transform: uppercase;
+    list-style-type: none;
+    color: #61481C;
 }
+
+.nav-link {
+    color: #61481C;
+}
+
+.navbar-brand {
+    font-family: 'Azeret Mono';
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    /* padding: 50px 0;  */
+    text-transform: uppercase;
+    list-style-type: none;
+    color: #61481C;
+}
+
+#nav-item {
+    color: #61481C;
+}
+
+hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 body {
     background-color: #FFEDDB;
-    color: black;
+    color: #61481C;
     /* background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;  */
     /* height: 100%;
     margin: 0px; */
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.circular {
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
+
+
+#circle-place {
+    height: 160px;
+    font-size: 20px;
+    color: #B73E3E;
+    animation: animate 10s linear infinite; 
+}
+
+@keyframes animate {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+span {
+    position: absolute; 
+    transform-origin: 0 80px;
+
+}
+
+#aboutHeader,
+#favHeader,
+#projHeader,
+#contactHeader {
+    text-align: center;
+    color: #B73E3E;
+    margin-bottom: 40px;
+}
+
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+#selfie {
+    position: relative;
+    width: 400px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#selfie_text {
+    position: relative;
+    margin-left:auto;
+    width: 400px;
+    margin-right: 200px;
+    right: 200px;
+}
+#st1 {
+    font-style: italic;
     font-weight: bold;
+    font-size: 22px;
+}
+
+.selfie_img {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+.selfie_overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #FFEDDB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.selfie_overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.selfie_overlay:hover {
+    opacity: 1;
+}
+
+.selfie_overlay:hover > * {
+    transform: translateY(0);
+}
+
+#carouA {
+    border: 2px solid #B73E3E;
+}
+#carouV {
+    border-radius: 10%;
+    border: 2px solid #B73E3E;
+}
+
+#volumeCover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    left: 100px;
+}
+#vcP {
+    text-align: center; 
+    margin-left: 200px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+#albumCover {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 75px;
+    right: 100px;
+}
+#acP {
+    text-align: center; 
+    margin-right: 200px;
+    margin-top: 25px;
+    font-weight: bolder;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+#contact1 {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#contact2 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#contact3 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+#contact4 {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+
+footer {
+    color: #61481C;
+    text-align: center;
+    margin-top: auto;
+    padding: 20px;
 }
