@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Julius_Sans_One">
     <link rel="stylesheet" href="asdf.css">
     <script src="asdf.js"></script>
     <title>chachabois</title>
@@ -14,18 +16,21 @@
 
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="navbar-inner">
-                <div class="container">
-                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="/img/shin-black-noodle.png" alt="" width="30" height="24">
+                        <span id="homeBtn">Zachary</span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="brand" href="#">lol</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav pull-right">
-                            <li class="active"><a href="/">Home</a></li>
-                            <li><a href="about">About</a></li>
-                        </ul>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="#">About Me</a>
+                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact Me</a>
+                        </div>
                     </div>
                 </div>
         </div>
