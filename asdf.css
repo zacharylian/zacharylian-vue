@@ -39,8 +39,8 @@
 }
 
 hr {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     width: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -98,15 +98,26 @@ span {
 
 }
 
+.fadeAnimate {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.fadeAnimate.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
 #aboutHeader,
 #favHeader,
 #projHeader,
 #contactHeader {
     text-align: center;
     color: #B73E3E;
-    margin-bottom: 40px;
+    margin: 40px;
 }
-
 
 .about {
     display: flex;
@@ -114,6 +125,7 @@ span {
     justify-content: center;
     margin-left: 150px;
 }
+
 
 #selfie {
     position: relative;
@@ -126,8 +138,8 @@ span {
     position: relative;
     margin-left:auto;
     width: 400px;
-    margin-right: 100px;
-    right: 100px;
+    margin-right: 125px;
+    right: 125px;
 }
 #st1 {
     font-style: italic;
@@ -171,11 +183,11 @@ span {
 }
 
 #carouA {
-    border: 2px solid #B73E3E;
+    border: 5px solid #B73E3E;
 }
 #carouV {
     border-radius: 10%;
-    border: 2px solid #B73E3E;
+    border: 5px solid #B73E3E;
 }
 
 #volumeCover {
