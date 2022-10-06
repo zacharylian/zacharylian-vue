@@ -219,6 +219,7 @@ span {
     font-weight: bolder;
 }
 
+
 .contact{
     display: flex;
     flex-direction: column;
@@ -226,8 +227,6 @@ span {
     justify-content: center;
     
 }
-
-
 
 #contact1 {
     margin-left: 15px;
